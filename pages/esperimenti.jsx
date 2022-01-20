@@ -21,6 +21,7 @@ export default function Esperimenti() {
     <LayoutDefault>
       <div className={styles.panel}>
       <br/>
+  // SPEED
         <label>Speed</label>
         <input
           type="range"
@@ -32,6 +33,7 @@ export default function Esperimenti() {
         />
 
 <br/><br/>
+          //OPACITY
         <label>Opacity</label>
         <input
           placeholder="0 to 1"
@@ -41,6 +43,7 @@ export default function Esperimenti() {
           onChange={(e) => setOpacity(e.target.value * 1)}
         />
 <br/><br/>
+          //SIZE
         <label>Size</label>
         <input
           type="range"
@@ -53,7 +56,7 @@ export default function Esperimenti() {
         />
       
       <br/><br/>
-
+//NUMBER OBJ
       <label>Number</label>
         <input
           placeholder="1 to 1000"
@@ -64,6 +67,7 @@ export default function Esperimenti() {
 
         />
 <br/><br/>
+          //FORM
 <label>Form</label>
         <select
         
@@ -80,7 +84,8 @@ export default function Esperimenti() {
         </select>
       
 <br/><br/>
-        <label>Colore</label>
+          //COLOR
+        <label>Color</label>
         <input
           type="color"
           name=""
@@ -89,7 +94,7 @@ export default function Esperimenti() {
          />
 
 <br/><br/>
-        
+        //COLLISION
         <label>Collision</label>
           <input
             type="checkbox"
@@ -98,7 +103,7 @@ export default function Esperimenti() {
             onChange={(e) => setCollision(e.target.checked)}
           />
 <br/><br/>
-
+        //DIRECTION
           <label>Direction</label>
           <select
             // type="range"
@@ -112,8 +117,8 @@ export default function Esperimenti() {
           <option value="left" >left</option>
           <option value="right" >right</option>
           </select>
-
 <br/><br/>
+            //OUT MODE
           <label>Out Mode</label>
           <select
             // type="range"
@@ -126,7 +131,7 @@ export default function Esperimenti() {
           </select>
 
           <br/><br/>
-
+      //BOUNCE
           <label>Bounce</label>
           <input
             type="checkbox"
@@ -136,7 +141,6 @@ export default function Esperimenti() {
           />
         
       </div>
-
       <div className={styles.wrapper}>
         <Particles
           options={{
